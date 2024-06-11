@@ -107,8 +107,7 @@ public class Parser {
             error(equals, "Invalid assignment target.");
         }
 
-        //TODO: IDK IF THIS SHOULD BE HERE
-        return null;
+        return expr;
     }
 
     private Expr comparison() {
