@@ -1,3 +1,4 @@
+/*
 package Lox;
 
 class AstPrinter implements Expr.Visitor<String>{
@@ -13,6 +14,11 @@ class AstPrinter implements Expr.Visitor<String>{
     @Override
     public String visitBinaryExpr(Expr.Binary expr) {
         return parenthesize(expr.operator.lexeme, expr.left, expr.right);
+    }
+
+    @Override
+    public String visitCallExpr(Expr.Call expr) {
+        return "";
     }
 
     @Override
@@ -55,3 +61,4 @@ class AstPrinter implements Expr.Visitor<String>{
         return builder.toString();
     }
 }
+*/
